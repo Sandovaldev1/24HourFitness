@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.body{
+    scroll-behavior: smooth;
+}
+/*Estilo de fuentes*/
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+.navbar-brand img {
+    width: 127px;
+}
+.navbar-toggler{
+    border: none;
+}
+/* Indicamos que cuando se haga scroll cambie de color el icono menu hamburguesa */
+.navigation-wrap.scroll-on .navbar-toggler i{
+    color: #ffffff;
+}
+.navbar-toggler i{
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+/* Quitamos estilos que trae por defecto al presionar el menu hamburguesa */
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 10px;
+}
+.nav-link:hover {
+    color: #0b80ee;
+}
+
+
+/* cuando esta responsivo, se despliegan las opciones y las centramos */
+.navbar-collapse{
+    text-align: center;
+}
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+    color: #fff;
+}
+
+.navigation-wrap.scroll-on .nav-link:hover
+{
+    color: #0b80ee;
+}
+
+.sectionVideo{
+    /* video bg*/
+    position: relative;
+    /* colocamos altura de 100vh para que se ajuste siempre a la altura  del dispositivo en el que nos encontremos */
+    height: 100vh;
+    /* quitamos el scroll en eje X AND Y */
+    overflow: hidden;
+}
+
+.sectionVideo video {
+    /* posicion "absolute" para poder posicionar el video dentro del contenedor con respecto a su posición padre */
+    position: absolute;
+    /* posiciona el video en el centro vertical del contenedor */
+    top: 50%;
+    /* posiciona el video en el centro horizontal del contenedor */
+    left: 50%;
+    /* establece el ancho mínimo del video en el 100% del ancho del contenedor */
+    min-width: 100%;
+    /* establece la altura mínima del video en el 100% del alto del contenedor */
+    min-height: 100%;
+    /* desplaza el video hacia arriba y la izquierda en un 50% de su ancho y alto, 
+    para centrarlo completamente en el contenedor. */
+    transform: translateX(-50%) translateY(-50%);
+    /* le agregamos una opacidad al video  */
+    filter: brightness(0.3);
+}
+
+.sectionVideo .boxContent {
+    /* elementos internos puedan ser posicionados de forma absoluta sobre el vídeo */
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.sectionVideo .boxContent p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+.sectionVideo .boxContent a {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    /* permite que la transicion sea lenta y no brusca a la hora de pasar el cursor sobre el boton
+     y que se aplique el fondo al boton */
+    transition: 0.8s ease-in-out;
+}
+
+.sectionVideo .boxContent a:hover {
+    color: #000;
+    border: 0;
+    background-color: #33cfff;
+}
+.sectionVideo .boxContent a:hover .icon {
+    color: #000;
+    /* cuando pasamos el cursor sobre el boton, que rote el icono de la flecha hacia abajo */
+    transform: rotate(90deg);
+}
+.sectionVideo .boxContent .icon {
+    color: #fff;
+    /* permite que la transicion sea lenta y no brusca a la hora de pasar el cursor sobre el boton
+    >para que al pasar el cursor, la flecha cambio suavemente de rotacion */
+    transition: 0.8s ease-in-out;
+    margin: 0 0 0 5px;
+}
+
+.card-body{
+    height: 250px;
+    margin-bottom: 55px;
+}
+
+.card:hover{
+    -webkit-transform: scale(1);
+	transform: scale(0.1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .6s ease-in-out;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+
+.servicios .btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sectionFour{
+    background-image: linear-gradient(130deg, rgb(99, 99, 99) 50%, grey 55%);
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*Estilos */
+.sectionTestimonios h2{
+    font-size: 45px;
+}
+
+.sectionTestimonios .containerSlider{
+    padding-left: 50px;
+}
+
+.sectionTestimonios .sliderContent{
+    padding: 30px 30px 30px 60px;
+    margin: 0 15px 30px 0;
+    min-width: 350px;
+    box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
+    background: #fff;
+}
+
+.sectionTestimonios .sliderContent img{
+    width: 90px;
+    border-radius: 50%;
+    border: 6px solid #0b80ee;
+    /*Posiciona de forma absoluta en relacion con el contenedor*/
+    position: absolute;
+    /*Para despues colocar la imagen a la izquierda con 1px*/
+    left: 1px;
+}
+
+.sectionTestimonios .sliderContent h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #000;
+}
+
+.sectionTestimonios .sliderContent .stars{
+    margin-top: 15px;
+}
+
+.sectionTestimonios .sliderContent .stars i{
+    color: #ffc107;
+    margin: 0 1px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-left,
+.sectionTestimonios .sliderContent .fa-quote-right{
+    color: #0b80ee;
+    font-size: 26px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-left{
+    position: relative;
+    right: -5px;
+}
+
+.sectionTestimonios .sliderContent .fa-quote-right{
+    position: relative;
+    right: -5px;
+    top: 10px;
+}
+
+.sectionTestimonios .sliderContent p{
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* estilo al div que contiene los indicadores del slider  */
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* estilos al indicador del slider */
+
+.owl-carousel button.owl-dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    background-color: #999;
+    border-radius: 50%;
+}
+
+/* estilo al indicador del slider cuando esta activo */
+
+.owl-carousel .owl-dot.active {
+    background-color: #0b80ee;
+}
+
+.sectionTestimonios h2{
+    text-decoration: underline;
+}
+
+footer .containerFooter{
+    padding: 50px;
+    background-color: #000;
+}
+
+.botonScrollTop{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #33cfff;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 568px){
+    .navigation-wrap {
+        width: 100%;
+    }
+    .navbar .navbar-collapse {
+        /* Ocultar el contenido de la barra de navegación por defecto */
+       background-color: #000; /* Fondo blanco */
+       /* Otros estilos específicos para la barra desplegada aquí */
+     }
+   
+     .navbar.is-active .navbar-collapse {
+         display: block; /* Mostrar el contenido de la barra de navegación cuando se despliega */
+         
+     }
+     .nav-link{
+        color: #f3f3f3;
+    }
+    .sectionVideo .boxContent {
+        padding-top: 70%;
+    }
+    .sectionVideo .boxContent a {
+        padding: 10px 50px;
+    }
+    .card-body{
+        height: 360px;
+    }
+    .card-text{
+        height: 205px;
+    }
+    /* slider */
+    .sectionTestimonios {
+        text-align: center;
+        }
+        .sectionTestimonios .containerSlider {
+            padding-left: 0;
+        }
+        .sectionTestimonios .sliderContent img {
+            position: initial;
+            margin: auto;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 200;
+        }
+        h4{
+            font-size: 25px;
+        }
+        h5{
+            font-size: 25px;
+        }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navigation-wrap {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    p{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    h4{
+        font-size: 35px;
+    }
+    h5{
+        font-size: 30px;
+    }
+    .servicios .btn{
+        padding: 25px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .card-body{
+        height: 280px;
+    }
+    .card-body span{
+        font-size: 20px;
+    }
+    .sectionVideo .boxContent {
+        padding-top: 50%;
+    }
+}
+
+/* 
+    Dispositivo = Tablets, Ipads (landscape = orientación horizontal)
+    Pantalla = 768px a 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .card span{
+        display: none;
+    }
+
+    .card-body{
+        height: 400px;
+    }
+    .card-text{
+        height: 285px;
+    }
+
+    .servicios .btn{
+        margin-top: 25px;
+        padding: 10px;
+    }
+    h5{
+        font-size: 25px;
+    }
+    .sectionVideo .boxContent {
+        padding-top: 30%;
+    }
+}
