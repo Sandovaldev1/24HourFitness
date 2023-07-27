@@ -155,10 +155,7 @@ p{
     margin: 0 0 0 5px;
 }
 
-.card-body{
-    height: 250px;
-    margin-bottom: 55px;
-}
+
 
 .card:hover{
     -webkit-transform: scale(1);
@@ -170,8 +167,12 @@ p{
 }
 
 
-
-
+.sectionTwo .text{
+    font-size: 25px;
+}
+.sectionTwo h4{
+    font-size: 30px;
+}
 .servicios .btn{
     display: flex;
     justify-content: center;
@@ -187,6 +188,12 @@ p{
     border-radius: 5px;
     color: #fff;
 }
+.sectionFour h4{
+    font-size: 30px;
+}
+.sectionFour p{
+    font-size: 22px;
+}
 
 /*Estilos Testimonios*/
 .sectionTestimonios h2{
@@ -200,7 +207,7 @@ p{
 .sectionTestimonios .sliderContent{
     padding: 30px 30px 30px 60px;
     margin: 0 15px 30px 0;
-    min-width: 350px;
+    /*min-width: 350px;*/
     box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
     background: #fff;
 }
@@ -208,7 +215,7 @@ p{
 .sectionTestimonios .sliderContent img{
     width: 90px;
     border-radius: 50%;
-    border: 6px solid #ffc107;
+    border: 6px solid #33cfff;
     /*Posiciona de forma absoluta en relacion con el contenedor*/
     position: absolute;
     /*Para despues colocar la imagen a la izquierda con 1px*/
@@ -233,7 +240,7 @@ p{
 
 .sectionTestimonios .sliderContent .fa-quote-left,
 .sectionTestimonios .sliderContent .fa-quote-right{
-    color: #ffd565;
+    color: #33cfff;
     font-size: 26px;
 }
 
@@ -273,14 +280,22 @@ p{
 /* estilo al indicador del slider cuando esta activo */
 
 .owl-carousel .owl-dot.active {
-    background-color: #ffc107;
+    background-color: #33cfff;
 }
 
 footer .containerFooter{
     padding: 50px;
     background-color: #000;
+    text-align: center;
 }
-
+.containerFooter h5{
+    font-size: 27px;
+    color: #cac9c9;
+}
+.containerFooter a{
+    color: #646464;
+    text-decoration: none;
+}
 .botonScrollTop{
     position: fixed;
     height: 45px;
@@ -297,7 +312,21 @@ footer .containerFooter{
 }
 
 
+/*dispositivos muy pequeños (minimizando navegador)*/
 @media (min-width: 320px) and (max-width: 480px) {
+    .sectionVideo .boxContent {
+        padding-top: 50%;
+    }
+    .sectionVideo .boxContent h1 {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    .sectionVideo .boxContent p {
+        font-size: 20px;
+    }
+    .sectionVideo .boxContent a {
+        padding: 15px 70px;
+    }
         /* slider */
         .sectionTestimonios {
             text-align: center;
@@ -305,15 +334,19 @@ footer .containerFooter{
             .sectionTestimonios .containerSlider {
                 padding-left: 0;
             }
-            .sectionTestimonios .sliderContent img {
-                position: initial;
+            .sectionTestimonios .sliderContent img { 
+                position:initial;
                 margin: auto;
             }
 }
 
 
-
+/*Iphone 5 y 16*/
 @media (min-width: 320px) and (max-width: 568px){
+    
+    body{
+        background: rgb(255, 251, 251);
+    }
     .navigation-wrap {
         width: 100%;
     }
@@ -337,32 +370,36 @@ footer .containerFooter{
         padding: 10px 50px;
     }
     .card-body{
-        height: 360px;
-    }
-    .card-text{
-        height: 205px;
+        height: auto;
     }
 
-
-        p{
-            font-size: 18px;
-            font-weight: 200;
-        }
-        h4{
-            font-size: 25px;
-        }
-        h5{
-            font-size: 25px;
-        }
+    span{
+        display: none;
+        visibility: hidden;
+    }
+     p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    h4{
+       font-size: 25px;
+    }
+    h5{
+        font-size: 25px;
+    }
 }
 
+/*Tablets con baja resolucion*/
 @media (min-width: 481px) and (max-width: 767px) {
     .navigation-wrap {
-        width: 80%;
+        width: 100%;
+    }
+    .card-body{
+        height: auto;
     }
 }
 
-
+/*Tablets*/
 @media (min-width: 768px) and (max-width: 1024px) {
     p{
         font-size: 25px;
@@ -382,8 +419,9 @@ footer .containerFooter{
         font-weight: 600;
     }
     .card-body{
-        height: 280px;
+        height: auto;
     }
+
     .card-body span{
         font-size: 20px;
     }
@@ -403,7 +441,7 @@ footer .containerFooter{
     }
 
     .card-body{
-        height: 400px;
+        height: auto;
     }
     .card-text{
         height: 285px;
