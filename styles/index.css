@@ -87,9 +87,7 @@ p{
 .sectionVideo{
     /* video bg*/
     position: relative;
-    /* colocamos altura de 100vh para que se ajuste siempre a la altura  del dispositivo en el que nos encontremos */
     height: 100vh;
-    /* quitamos el scroll en eje X AND Y */
     overflow: hidden;
 }
 
