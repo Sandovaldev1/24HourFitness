@@ -28,7 +28,7 @@ $(document).ready(function () {
 
                 // En pantallas con un ancho de 1000 píxeles o más, se muestran 2 elementos por vez
 
-                items: 1
+                items: 2
 
             }
 
