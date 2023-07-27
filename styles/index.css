@@ -188,7 +188,7 @@ p{
     color: #fff;
 }
 
-/*Estilos */
+/*Estilos Testimonios*/
 .sectionTestimonios h2{
     font-size: 45px;
 }
@@ -208,7 +208,7 @@ p{
 .sectionTestimonios .sliderContent img{
     width: 90px;
     border-radius: 50%;
-    border: 6px solid #0b80ee;
+    border: 6px solid #ffc107;
     /*Posiciona de forma absoluta en relacion con el contenedor*/
     position: absolute;
     /*Para despues colocar la imagen a la izquierda con 1px*/
@@ -233,7 +233,7 @@ p{
 
 .sectionTestimonios .sliderContent .fa-quote-left,
 .sectionTestimonios .sliderContent .fa-quote-right{
-    color: #0b80ee;
+    color: #ffd565;
     font-size: 26px;
 }
 
@@ -273,11 +273,7 @@ p{
 /* estilo al indicador del slider cuando esta activo */
 
 .owl-carousel .owl-dot.active {
-    background-color: #0b80ee;
-}
-
-.sectionTestimonios h2{
-    text-decoration: underline;
+    background-color: #ffc107;
 }
 
 footer .containerFooter{
@@ -299,6 +295,23 @@ footer .containerFooter{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+        /* slider */
+        .sectionTestimonios {
+            text-align: center;
+            }
+            .sectionTestimonios .containerSlider {
+                padding-left: 0;
+            }
+            .sectionTestimonios .sliderContent img {
+                position: initial;
+                margin: auto;
+            }
+}
+
+
 
 @media (min-width: 320px) and (max-width: 568px){
     .navigation-wrap {
@@ -329,17 +342,8 @@ footer .containerFooter{
     .card-text{
         height: 205px;
     }
-    /* slider */
-    .sectionTestimonios {
-        text-align: center;
-        }
-        .sectionTestimonios .containerSlider {
-            padding-left: 0;
-        }
-        .sectionTestimonios .sliderContent img {
-            position: initial;
-            margin: auto;
-        }
+
+
         p{
             font-size: 18px;
             font-weight: 200;

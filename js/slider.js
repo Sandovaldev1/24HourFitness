@@ -6,7 +6,7 @@ $(document).ready(function () {
         loop: true,
         // Margen entre los elementos del slide
         margen: 10,
-        responsive: {
+        responsive:{
 
             0: {
 
