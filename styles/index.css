@@ -347,6 +347,9 @@ footer .containerFooter{
     body{
         background: rgb(255, 251, 251);
     }
+    .sectionTestimonios .sliderContent{
+        width: 100%;
+    }
     .navigation-wrap {
         width: 100%;
     }
