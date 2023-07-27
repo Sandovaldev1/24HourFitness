@@ -207,7 +207,7 @@ p{
 .sectionTestimonios .sliderContent{
     padding: 30px 30px 30px 60px;
     margin: 0 15px 30px 0;
-    /*min-width: 350px;*/
+    min-width: 350px;
     box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
     background: #fff;
 }
@@ -346,9 +346,6 @@ footer .containerFooter{
     
     body{
         background: rgb(255, 251, 251);
-    }
-    .sectionTestimonios .sliderContent{
-        width: 100%;
     }
     .navigation-wrap {
         width: 100%;
