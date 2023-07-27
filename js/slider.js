@@ -5,8 +5,8 @@ $(document).ready(function () {
         // Bucle infinito para mostrar las reseñas
         loop: true,
         // Margen entre los elementos del slide
-        margen: 10,
-        responsive:{
+        margen: 20,
+        responsive: {
 
             0: {
 
